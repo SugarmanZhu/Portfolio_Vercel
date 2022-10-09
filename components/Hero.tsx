@@ -20,7 +20,7 @@ function Hero({}: Props) {
             src='/images/avatar.png'
         />
         <div>
-            <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[8px] md:tracking-[15px]'>Software Engineer</h2>
+            <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[8px] mr-[-8px] md:tracking-[15px] md:mr-[-15px]'>Software Engineer</h2>
             <h1 className='text-3xl md:text-5xl lg:text-6xl font-semibold scroll-px-10'>
                 <span className='mr-2'>{text}</span>
                 <Cursor cursorColor="#F7AB0A" />
