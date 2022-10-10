@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 import About from '../components/About'
 import ContactMe from '../components/ContactMe'
 import Experience from '../components/Experience'
@@ -42,6 +43,16 @@ const Home: NextPage = () => {
       <section id='contact' className='snap-start'>
         <ContactMe />
       </section>
+
+      <Link href="#hero">
+        <footer className='w-10 h-10 rounded-full animate-bounce fixed z-[100] cursor-pointer shadow-md bottom-5 right-[10%] md:right-[5%] lg:right-[10%]'>
+          <div className='flex items-center justify-center'>
+            <img 
+              className='h-10 w-10 rounded-full filter cursor-pointer animate-bounce'
+              src="images/avatar.png" alt="" />
+          </div>
+        </footer>
+      </Link>
     </div>
   )
 }
