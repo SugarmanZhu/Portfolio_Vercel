@@ -24,7 +24,7 @@ function About({}: Props) {
 
         <div className='space-y-10 px-0 md:px-10'>
             <h4 className='text-4xl font-semibold'>
-                Here is a <span className='underline decoration-[#F7AB0A]/50'>little bit</span> about me
+                Here is a <span className='underline decoration-[#3A88FC]/50'>little bit</span> about me
             </h4>
             <p className='text-base md:text-lg'>
                 Hi, I'm Xiaotan Zhu from Beijing, China. 
