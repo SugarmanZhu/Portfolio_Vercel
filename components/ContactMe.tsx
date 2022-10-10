@@ -21,12 +21,12 @@ function ContactMe({}: Props) {
     <div className='flex flex-col relative h-screen text-left overflow-hidden md:flex-row max-w-full justify-evenly mx-auto items-center'>
         <h3 className='absolute top-24 uppercase tracking-[10px] mr-[-10px] md:tracking-[20px] md:mr-[-20px] text-gray-500 text-2xl'>Contact</h3>
 
-        <div className='flex flex-col space-y-10'>
+        <div className='flex flex-col space-y-5 md:space-y-10'>
             <h4 className='text-4xl font-semibold text-center'>
                 Want to know more? <span className='decoration-[#F7AB0A]/50 underline'>Drop me a message!</span>
             </h4>
 
-            <div className='space-y-10'>
+            <div className='space-y-5 md:space-y-10'>
                 <div className='flex items-center justify-center space-x-5'>
                     <PhoneIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
                     <p className='text-2xl'>+44 07410078526</p>
@@ -39,7 +39,7 @@ function ContactMe({}: Props) {
             </div>
 
             <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-fit mx-auto'>
-                <div className='flex space-x-2'>
+                <div className='flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2'>
                     <input {...register('name')} placeholder='Name' className='contactInput' type="text" />
                     <input {...register('email')} placeholder='Email' className='contactInput' type="email" />
                 </div>

@@ -23,6 +23,7 @@ function Projects({}: Props) {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 1 }}
               viewport={{ once: true }}
+              className='hidden md:block w-96 h-96 rounded-2xl object-cover'
               src="images/avatar.png" alt="" />
             <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
               <h4 className='text-4xl font-semibold text-center'>
