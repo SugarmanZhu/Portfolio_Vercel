@@ -14,7 +14,7 @@ function Experience({}: Props) {
         md:tracking-[20px] md:mr-[-20px] text-gray-500 text-2xl'>Experience</h3>
         
         <div className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x 
-        snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#3A88FC]/80'>
+        snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#3A88FC]/60'>
             <ExperienceCard />
             <ExperienceCard />
             <ExperienceCard />

@@ -13,7 +13,7 @@ const Home: NextPage = () => {
   return (
     <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory 
     overflow-y-scroll overflow-x-hidden scroll-smooth z-0 scrollbar 
-    scrollbar-track-gray-400/20 scrollbar-thumb-[#3A88FC]/80'>
+    scrollbar-track-gray-400/20 scrollbar-thumb-[#3A88FC]/60'>
       <Head>
         <title>Xiaotan Zhu</title>
         <link rel="shortcut icon" href="images/avatar.png" />
