@@ -15,7 +15,8 @@ const Home: NextPage = () => {
     overflow-y-scroll overflow-x-hidden scroll-smooth z-0 scrollbar 
     scrollbar-track-gray-400/20 scrollbar-thumb-[#3A88FC]/80'>
       <Head>
-        <title>Xiaotan's Portfolio</title>
+        <title>Xiaotan Zhu</title>
+        <link rel="shortcut icon" href="images/avatar.png" />
       </Head>
       
       <Header />
