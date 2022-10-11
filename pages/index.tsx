@@ -45,11 +45,11 @@ const Home: NextPage = () => {
       </section>
 
       <Link href="#hero">
-        <footer className='w-10 h-10 rounded-full animate-bounce fixed z-[100] cursor-pointer shadow-md bottom-5 right-[10%] md:right-[5%] lg:right-[10%]'>
+        <footer className='h-10 w-10 rounded-full animate-bounce fixed z-[100] cursor-pointer shadow-md bottom-5 right-[10%] md:right-[5%] lg:right-[10%]'>
           <div className='flex items-center justify-center'>
-            <img 
-              className='h-10 w-10 rounded-full filter cursor-pointer animate-bounce'
-              src="images/avatar.png" alt="" />
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="text-[#3A88FC] h-10 w-10 animate-pulse">
+              <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm.53 5.47a.75.75 0 00-1.06 0l-3 3a.75.75 0 101.06 1.06l1.72-1.72v5.69a.75.75 0 001.5 0v-5.69l1.72 1.72a.75.75 0 101.06-1.06l-3-3z" clipRule="evenodd" />
+            </svg>
           </div>
         </footer>
       </Link>
