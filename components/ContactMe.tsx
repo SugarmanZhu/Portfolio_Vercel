@@ -20,7 +20,7 @@ function ContactMe({}: Props) {
     <div className='flex flex-col relative h-screen text-left overflow-hidden md:flex-row max-w-full justify-evenly mx-auto items-center'>
         <h3 className='absolute top-24 uppercase tracking-[10px] mr-[-10px] md:tracking-[20px] md:mr-[-20px] text-gray-500 text-2xl'>Contact</h3>
 
-        <div className='flex flex-col space-y-5 md:space-y-10'>
+        <div className='flex flex-col mx-8 space-y-5 md:space-y-10'>
             <h4 className='text-4xl font-semibold text-center'>
                 Want to know more? <span className='decoration-[#3A88FC]/50 underline'>Drop me a message!</span>
             </h4>
