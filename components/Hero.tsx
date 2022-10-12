@@ -11,8 +11,24 @@ type Props = {
 function Hero({ pageInfo }: Props) {
     const [text, count] = useTypewriter({
         words: [
-            "Hi there, I'm Xiaotan", 
-            '哈喽，我系朱笑谈',
+            "Hi there, I'm Xiaotan",     // English
+            '哈喽，我是朱笑谈',           // Chinese
+            'नमस्ते, मैं Xiaotan हूँ',        // Hindi
+            'Hola, soy Xiaotan',        // Spanish
+            'Salut, je suis Xiaotan',   // French
+            'مرحبًا ، أنا Xiaotan',     // Arabic
+            'سلام، من شیائوتان هستم',  // Persian
+            'Hallo, ich bin Xiaotan',   // German
+            'Привет, я Сяотань',        // Russian
+            'Hello, saya Xiaotan',      // Malay
+            'Olá, eu sou Xiaotan',      // Portuguese
+            'Ciao, sono Xiaotan',       // Italian
+            'Merhaba ben Xiaotan',      // Turkish
+            '안녕하세요 샤오탄입니다',    // Korean
+            'こんにちは、シャオタンです', // Japanese
+            'ਹੈਲੋ, ਮੈਂ ਸ਼ਾਓਤਨ ਹਾਂ',          // Punjabi
+            'హలో, నేను షాటన్',         // Telugu
+            'हॅलो, मी शाओतन आहे',        // Marathi
         ],
         loop: true,
         delaySpeed: 2000,
