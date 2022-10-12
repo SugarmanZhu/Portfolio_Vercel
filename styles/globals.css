@@ -4,7 +4,7 @@
 
 @layer components {
     .heroButton {
-        @apply px-3 py-1 mx-2 shadow-md hover:shadow-[#3A88FC]/60 hover:-translate-y-[2px] border-gray-500 font-semibold rounded-full uppercase text-xs md:text-base 
+        @apply px-3 py-1 mx-2 mb-3 shadow-md hover:shadow-[#3A88FC]/60 hover:-translate-y-[2px] border-gray-500 font-semibold rounded-full uppercase text-xs md:text-base 
         tracking-widest text-gray-500 transition-all border hover:text-[#3A88FC]/70 hover:dark:border-[#3A88FC]/70;
     }
 

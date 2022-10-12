@@ -20,7 +20,7 @@ function Projects({ projects }: Props) {
       <h3 className='absolute top-24 uppercase tracking-[10px] mr-[-10px] 
       md:tracking-[20px] md:mr-[-20px] text-gray-500 text-2xl'>Projects</h3>
 
-      <div className='relative w-full flex overflow-x-scroll overflow-y-hidden 
+      <div className='relative w-full flex overflow-x-scroll overflow-y-scroll 
       snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 
       scrollbar-thumb-[#3A88FC]/60'>
         {projects.map((project, index) => (
@@ -33,8 +33,8 @@ function Projects({ projects }: Props) {
               viewport={{ once: true }}
               className='hidden md:block w-96 h-96 rounded-2xl object-cover'
               src={urlFor(project?.image).url()} alt="" />
-            <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
-              <h4 className='text-4xl font-semibold text-center'>
+            <div className='space-y-5 md:space-y-10 px-0 md:px-10 max-w-6xl'>
+              <h4 className='text-xl md:text-4xl font-semibold text-center'>
                 <span className='underline decoration-[#3A88FC]/50'>
                   Project {index + 1} of {projects.length}:
                 </span> {project.title}
@@ -56,12 +56,12 @@ function Projects({ projects }: Props) {
 
               <div className='flex items-center space-x-2 justify-center'>
                 {project.technologies.map((technology) => (
-                  <div key={technology._id} className='mx-5 flex flex-ro items-center'>
+                  <div key={technology._id} className='mx-0 md:mx-5 flex flex-ro items-center'>
                     <img 
-                      className="h-10 w-10 rounded-full" 
+                      className="h-5 w-5 md:h-10 md:w-10 rounded-full" 
                       src={urlFor(technology.image).url()} alt="" 
                     />
-                    <span className="p-2 text-gray-400">{technology.title}</span>
+                    <span className="hidden md:block p-2 text-gray-400">{technology.title}</span>
                   </div>
                 ))}
               </div>

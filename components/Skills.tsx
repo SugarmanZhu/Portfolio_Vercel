@@ -13,7 +13,7 @@ function Skills({ skills }: Props) {
     >
       <h3 className='absolute top-24 uppercase tracking-[10px] mr-[-10px] md:tracking-[20px] md:mr-[-20px] text-gray-500 text-2xl'>Skills</h3>
   
-      <div className='grid grid-cols-4 gap-5'>
+      <div className='mt-[100px] md:mt-0 grid grid-cols-4 gap-5'>
         {skills.map((skill) => (
           <SkillElement key={skill._id} skill={skill} />
         ))}
