@@ -23,7 +23,7 @@ type Props = {
   socials: Social[];
 };
 
-const Home = () => {
+const Home = ({ pageInfo, experiences, skills, socials, projects }: Props) => {
   return (
     <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory 
     overflow-y-scroll overflow-x-hidden scroll-smooth z-0 scrollbar 
@@ -33,7 +33,7 @@ const Home = () => {
         <link rel="shortcut icon" href="images/avatar.png" />
       </Head>
       
-      {/* <Header socials={socials} />
+      <Header socials={socials} />
 
       <section id='hero' className='snap-start'>
         <Hero pageInfo={pageInfo} />
@@ -57,7 +57,7 @@ const Home = () => {
 
       <section id='contact' className='snap-start'>
         <ContactMe />
-      </section> */}
+      </section>
 
       <Link href="#hero">
         <footer className='h-10 w-10 rounded-full animate-bounce fixed z-[100] cursor-pointer shadow-md bottom-5 right-[10%] md:right-[5%] lg:right-[10%]'>
@@ -74,21 +74,21 @@ const Home = () => {
 
 export default Home
 
-// export const getStaticProps: GetStaticProps<Props> = async () => {
-//   const pageInfo: PageInfo = await fetchPageInfo();
-//   const experiences: Experience[] = await fetchExperiences();
-//   const skills: Skill[] = await fetchSkills();
-//   const socials: Social[] = await fetchSocials();
-//   const projects: Project[] = await fetchProjects();
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const pageInfo: PageInfo = await fetchPageInfo();
+  const experiences: Experience[] = await fetchExperiences();
+  const skills: Skill[] = await fetchSkills();
+  const socials: Social[] = await fetchSocials();
+  const projects: Project[] = await fetchProjects();
 
-//   return {
-//     props: {
-//       pageInfo,
-//       experiences,
-//       skills,
-//       socials,
-//       projects,
-//     },
-//     revalidate: 10,
-//   };
-// };
+  return {
+    props: {
+      pageInfo,
+      experiences,
+      skills,
+      socials,
+      projects,
+    },
+    revalidate: 10,
+  };
+};
