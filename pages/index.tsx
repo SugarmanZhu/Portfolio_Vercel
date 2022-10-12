@@ -33,7 +33,7 @@ const Home = ({ pageInfo, experiences, skills, socials, projects }: Props) => {
         <link rel="shortcut icon" href="images/avatar.png" />
       </Head>
       
-      <Header socials={socials} />
+      {/* <Header socials={socials} />
 
       <section id='hero' className='snap-start'>
         <Hero pageInfo={pageInfo} />
@@ -57,7 +57,7 @@ const Home = ({ pageInfo, experiences, skills, socials, projects }: Props) => {
 
       <section id='contact' className='snap-start'>
         <ContactMe />
-      </section>
+      </section> */}
 
       <Link href="#hero">
         <footer className='h-10 w-10 rounded-full animate-bounce fixed z-[100] cursor-pointer shadow-md bottom-5 right-[10%] md:right-[5%] lg:right-[10%]'>
