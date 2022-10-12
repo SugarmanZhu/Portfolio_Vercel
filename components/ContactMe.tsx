@@ -1,5 +1,6 @@
 import React from 'react'
 import { useForm, SubmitHandler } from "react-hook-form";
+import { PageInfo } from '../typings';
 
 type Inputs = {
     name: string,
@@ -8,9 +9,11 @@ type Inputs = {
     message: string,
 };
 
-type Props = {}
+type Props = {
+    pageInfo: PageInfo;
+}
 
-function ContactMe({}: Props) {
+function ContactMe({ pageInfo }: Props) {
     const { register, handleSubmit } = useForm<Inputs>();
     const onSubmit: SubmitHandler<Inputs> = formData => {
         window.location.href = `mailto:web_message@zhuxiaotan.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
@@ -31,7 +34,7 @@ function ContactMe({}: Props) {
                         <path d="M10.5 18.75a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z" />
                         <path fillRule="evenodd" d="M8.625.75A3.375 3.375 0 005.25 4.125v15.75a3.375 3.375 0 003.375 3.375h6.75a3.375 3.375 0 003.375-3.375V4.125A3.375 3.375 0 0015.375.75h-6.75zM7.5 4.125C7.5 3.504 8.004 3 8.625 3H9.75v.375c0 .621.504 1.125 1.125 1.125h2.25c.621 0 1.125-.504 1.125-1.125V3h1.125c.621 0 1.125.504 1.125 1.125v15.75c0 .621-.504 1.125-1.125 1.125h-6.75A1.125 1.125 0 017.5 19.875V4.125z" clipRule="evenodd" />
                     </svg>
-                    <p className='text-2xl'>+44 07410078526</p>
+                    <a href={`tel:${pageInfo.phoneNumber}`} className='text-2xl'>{pageInfo.phoneNumber}</a>
                 </div>
 
                 <div className='flex items-center justify-center space-x-3'>
@@ -39,7 +42,7 @@ function ContactMe({}: Props) {
                         <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
                         <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
                     </svg>
-                    <p className='text-2xl'>xiaotan@zhuxiaotan.com</p>
+                    <a href={`mailto:${pageInfo.email}`} className='text-2xl'>{pageInfo.email}</a>
                 </div>
             </div>
 
